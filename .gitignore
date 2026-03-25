@@ -22,3 +22,20 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+# Compilados do Java
+*.class
+
+# Pastas de saída e builds (Maven/Gradle/IntelliJ)
+target/
+out/
+bin/
+
+# Configurações específicas da IDE (IntelliJ)
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Arquivos de log e temporários
+*.log
