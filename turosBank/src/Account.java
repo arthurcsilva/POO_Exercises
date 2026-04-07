@@ -67,7 +67,6 @@ public class Account {
         System.out.println("[3] Withdraw;");
         System.out.println("[4] Exit.");
         System.out.print("Option: ");
-        // Note que não existe a palavra 'return' aqui!
     }
 
     public static void delay(int ms) {
