@@ -1,3 +1,7 @@
+package main;
+
+import domain.Account;
+
 import java.util.Scanner;
 
 public class BankMov {

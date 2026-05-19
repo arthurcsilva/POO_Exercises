@@ -1,3 +1,7 @@
+package main;
+
+import domain.Book;
+
 import java.util.Scanner;
 
 public class TechLibrary {
