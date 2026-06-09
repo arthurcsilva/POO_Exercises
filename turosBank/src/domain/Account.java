@@ -8,6 +8,13 @@ public class Account {
     private String accountCpf;
     private double balance;
 
+    public Account(int accountNumber, int accountDigit, String accountOwner, String accountCpf) {
+        this.accountNumber = accountNumber;
+        this.accountDigit = accountDigit;
+        this.accountOwner = accountOwner;
+        this.accountCpf = accountCpf;
+    }
+
     public int getAccountNumber() {
         return accountNumber;
     }
@@ -41,7 +48,12 @@ public class Account {
     }
 
     public void depositValue(double value) {
+        if (value < 0){
+            System.out.println("Invalid value. Please enter numbers greater than 0 for this operation.");
+            return;
+        }
         this.balance += value;
+        System.out.println("Success, your deposit of $" + value + " has been added to the total." );
     }
 
     public boolean withdrawValue(double value) {
